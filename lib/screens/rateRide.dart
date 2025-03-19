@@ -75,7 +75,7 @@ class _RateRideState extends State<RateRide> {
                   const SizedBox(
                     height: 24,
                   ),
-                  Container(
+                  SizedBox(
                     height: maxLines * 24,
                     child: TextField(
                       controller: commentController,

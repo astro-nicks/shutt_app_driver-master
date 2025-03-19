@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shutt_app_driver/styles/colors.dart';
-import 'package:shutt_app_driver/screens/locationSet.dart';
 
 class CustomTextField2 extends StatelessWidget {
   final TextEditingController textController;

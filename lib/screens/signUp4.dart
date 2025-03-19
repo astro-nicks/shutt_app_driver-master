@@ -27,6 +27,7 @@ class _SignUp4State extends State<SignUp4> {
     super.initState();
   }
 
+  @override
   void didChangeDependencies() {
     // TODO: implement didChangeDependencies
     Provider.of<AuthProvider>(context).getOrganizations();

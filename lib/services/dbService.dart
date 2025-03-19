@@ -3,7 +3,6 @@ import 'package:location/location.dart';
 import 'package:shutt_app_driver/models/Bus.dart';
 import 'package:shutt_app_driver/models/Organization.dart';
 import 'package:shutt_app_driver/models/Stop.dart';
-import 'package:shutt_app_driver/providers/authProvider.dart';
 
 import '../models/Driver.dart';
 import '../models/Ride.dart';

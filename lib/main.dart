@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 // Providers
 import 'package:shutt_app_driver/providers/authProvider.dart';
@@ -10,13 +9,6 @@ import 'package:shutt_app_driver/providers/mapProvider.dart';
 import 'package:shutt_app_driver/screens/authWrapper.dart';
 
 // Screens
-import 'package:shutt_app_driver/screens/home.dart';
-import 'package:shutt_app_driver/screens/home2.dart';
-import 'package:shutt_app_driver/screens/rateRide.dart';
-import 'package:shutt_app_driver/screens/signUp2.dart';
-import 'package:shutt_app_driver/screens/signUp3.dart';
-import 'package:shutt_app_driver/screens/signUp1.dart';
-import 'package:shutt_app_driver/screens/signUp4.dart';
 import 'package:shutt_app_driver/services/authService.dart';
 import 'package:shutt_app_driver/services/dbService.dart';
 

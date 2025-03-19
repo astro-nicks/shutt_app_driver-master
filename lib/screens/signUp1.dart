@@ -95,7 +95,7 @@ class _SignUp1State extends State<SignUp1> {
                               (String verificationId, int? resendToken) async {
                             String smsCode = 'xxxx';
                             auth.verificationId = verificationId;
-                            print("Verification Id = ${verificationId}");
+                            print("Verification Id = $verificationId");
                           },
                           codeAutoRetrievalTimeout: (String resendToken) {},
                           timeout: const Duration(seconds: 60),
@@ -163,10 +163,10 @@ class _SignUp1State extends State<SignUp1> {
                               // Provider.of<AuthProvider>(context, listen: false)
                               // .signUpState = 4;
                             },
-                            child: Row(
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
-                              children: const [
+                              children: [
                                 Icon(
                                   FontAwesomeIcons.google,
                                   color: appColors.lightGreen,

@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
     //   buses = temp;
     // });
     for (Bus bus in temp) {
-      LatLng latLng = new LatLng(bus.location.latitude, bus.location.longitude);
+      LatLng latLng = LatLng(bus.location.latitude, bus.location.longitude);
       await Provider.of<MapProvider>(context, listen: false)
           .addMarker(latLng, bus.registrationNumber);
     }

@@ -3,13 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:provider/provider.dart';
 import 'package:shutt_app_driver/providers/mapProvider.dart';
 import 'package:shutt_app_driver/screens/homeWrapper.dart';
-import 'package:shutt_app_driver/screens/signUp1.dart';
-import 'package:shutt_app_driver/screens/home.dart';
-import 'package:shutt_app_driver/screens/signUp3.dart';
 import 'package:shutt_app_driver/screens/signUpWrapper.dart';
-import 'package:shutt_app_driver/services/authService.dart';
 
-import '../providers/authProvider.dart';
 
 class AuthWrapper extends StatelessWidget {
   const AuthWrapper({Key? key}) : super(key: key);

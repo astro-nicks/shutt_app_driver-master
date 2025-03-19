@@ -24,7 +24,7 @@ class RideInfoItem extends StatelessWidget {
       children: [
         Text(
           keyText,
-          style: TextStyle(color: appColors.green, fontSize: 12),
+          style: const TextStyle(color: appColors.green, fontSize: 12),
         ),
         Text(valueText,
             style: TextStyle(

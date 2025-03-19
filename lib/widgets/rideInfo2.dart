@@ -12,17 +12,17 @@ class RideInfo2 extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Material(
         color: appColors.appWhite,
-        borderRadius: BorderRadius.all(Radius.circular(5)),
+        borderRadius: const BorderRadius.all(Radius.circular(5)),
         elevation: 2,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              const Row(
                 // mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(
                     Icons.bus_alert,
                     size: 32,
@@ -45,7 +45,7 @@ class RideInfo2 extends StatelessWidget {
               ),
               Text(
                 promptText,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: appColors.green),
@@ -73,16 +73,16 @@ class RideInfo2 extends StatelessWidget {
               const SizedBox(
                 height: 12,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 // crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     "Fare:",
                     style: TextStyle(color: appColors.green, fontSize: 12),
                   ),
                   Row(
-                    children: const [
+                    children: [
                       Text("GHc",
                           style: TextStyle(
                               color: appColors.darkGreen,

@@ -3,8 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:shutt_app_driver/providers/authProvider.dart';
 import 'package:shutt_app_driver/screens/signUp1.dart';
 import 'package:shutt_app_driver/screens/signUp2.dart';
-import 'package:shutt_app_driver/screens/signUp3.dart';
-import 'package:shutt_app_driver/screens/signUp4.dart';
 
 class signUpWrapper extends StatelessWidget {
   const signUpWrapper({Key? key}) : super(key: key);

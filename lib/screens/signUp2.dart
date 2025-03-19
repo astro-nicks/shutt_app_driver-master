@@ -68,7 +68,7 @@ class _SignUp2State extends State<SignUp2> {
                   Text(
                     "+233 ${auth.phoneNumController.text.substring(0, 2)} ${auth.phoneNumController.text.substring(2, 5)} ${auth.phoneNumController.text.trim().substring(5)}",
                     textAlign: TextAlign.left,
-                    style: TextStyle(color: appColors.darkGreen),
+                    style: const TextStyle(color: appColors.darkGreen),
                   ),
                   const SizedBox(
                     height: 18,

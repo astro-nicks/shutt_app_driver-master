@@ -55,7 +55,7 @@ class AuthService {
         codeSent: (String verificationId, int? resendToken) async {
           String smsCode = 'xxxx';
           verificationID = verificationId;
-          print("Verification Id = ${verificationId}");
+          print("Verification Id = $verificationId");
         },
         codeAutoRetrievalTimeout: (String resendToken) {},
         timeout: const Duration(seconds: 60),
@@ -64,6 +64,7 @@ class AuthService {
       print(e.toString());
       return "";
     }
+    return null;
   }
 
   // Sign in with phone

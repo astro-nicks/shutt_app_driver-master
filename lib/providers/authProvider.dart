@@ -20,7 +20,7 @@ class AuthProvider extends ChangeNotifier {
   Driver? currentDriver;
   List<Organization> organizations = [];
   Organization? driverOrganization;
-  dbService _dbService = dbService();
+  final dbService _dbService = dbService();
   User? curUser;
   bool orgsSet = false;
   bool signUpChecked = false;

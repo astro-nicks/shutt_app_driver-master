@@ -21,7 +21,7 @@ class RideInfo1 extends StatelessWidget {
       padding: const EdgeInsets.only(right: 16.0, bottom: 16, left: 16),
       child: Material(
         color: appColors.appWhite,
-        borderRadius: BorderRadius.all(Radius.circular(5)),
+        borderRadius: const BorderRadius.all(Radius.circular(5)),
         elevation: 2,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -79,16 +79,16 @@ class RideInfo1 extends StatelessWidget {
               const SizedBox(
                 height: 12,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 // crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     "Fare:",
                     style: TextStyle(color: appColors.green, fontSize: 12),
                   ),
                   Row(
-                    children: const [
+                    children: [
                       Text("GHc",
                           style: TextStyle(
                               color: appColors.darkGreen,

@@ -14,7 +14,7 @@ class TripInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: appColors.appWhite,
-      borderRadius: BorderRadius.all(Radius.circular(5)),
+      borderRadius: const BorderRadius.all(Radius.circular(5)),
       elevation: 2,
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -43,16 +43,16 @@ class TripInfo extends StatelessWidget {
               ],
             ),
             const Divider(),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   "Next stop :",
                   style: TextStyle(color: appColors.green, fontSize: 16),
                 ),
                 Row(
-                  children: const [
+                  children: [
                     Text("GHc",
                         style: TextStyle(
                             color: appColors.darkGreen,

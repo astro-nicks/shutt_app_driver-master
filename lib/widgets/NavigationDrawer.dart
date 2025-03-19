@@ -4,7 +4,6 @@ import 'package:shutt_app_driver/screens/about.dart';
 import 'package:shutt_app_driver/screens/authWrapper.dart';
 import 'package:shutt_app_driver/styles/colors.dart';
 import 'package:shutt_app_driver/screens/profile.dart';
-import 'package:shutt_app_driver/screens/settings.dart';
 import 'package:shutt_app_driver/screens/home.dart';
 import 'package:provider/provider.dart';
 

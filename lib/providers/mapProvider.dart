@@ -24,7 +24,7 @@ class MapProvider with ChangeNotifier {
     // await getCurrentLocation();
     // await addRandomMarkers();
     await createPolylines(
-        LatLng(5.653794, -0.189129), LatLng(5.804876, -0.114641), Colors.black);
+        const LatLng(5.653794, -0.189129), const LatLng(5.804876, -0.114641), Colors.black);
   }
 
   String locationTextState = "";
@@ -50,8 +50,8 @@ class MapProvider with ChangeNotifier {
 //  this stream is for all the driver on the app
   StreamSubscription<List<Bus>>? allBusesStream;
 
-  dbService _dbService = dbService();
-  AuthProvider _authProvider = AuthProvider();
+  final dbService _dbService = dbService();
+  final AuthProvider _authProvider = AuthProvider();
 
   int orderState = 1;
 
@@ -185,7 +185,7 @@ class MapProvider with ChangeNotifier {
   }
 
   addBusToMap(Bus bus) {
-    LatLng latLng = new LatLng(bus.location.latitude, bus.location.longitude);
+    LatLng latLng = LatLng(bus.location.latitude, bus.location.longitude);
 
     Marker newMarker = Marker(
       markerId: MarkerId('${latLng.latitude}-${latLng.longitude}'),
@@ -204,7 +204,7 @@ class MapProvider with ChangeNotifier {
   addBusesToMap(List<Bus> buses) {
     // markers = {};
     for (Bus bus in buses) {
-      LatLng latLng = new LatLng(bus.location.latitude, bus.location.longitude);
+      LatLng latLng = LatLng(bus.location.latitude, bus.location.longitude);
 
       Marker newMarker = Marker(
         markerId: MarkerId('${latLng.latitude}-${latLng.longitude}'),
@@ -242,7 +242,7 @@ class MapProvider with ChangeNotifier {
     }
 
     // Defining an ID
-    PolylineId id = PolylineId('poly');
+    PolylineId id = const PolylineId('poly');
 
     // Initializing Polyline
     Polyline polyline = Polyline(
@@ -303,7 +303,7 @@ class MapProvider with ChangeNotifier {
 
   setCustomMapPin(String image) async {
     BitmapDescriptor icon = await BitmapDescriptor.fromAssetImage(
-        ImageConfiguration(devicePixelRatio: 2.5), image);
+        const ImageConfiguration(devicePixelRatio: 2.5), image);
     return icon;
   }
 

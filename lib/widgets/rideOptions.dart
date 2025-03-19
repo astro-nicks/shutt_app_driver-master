@@ -32,7 +32,7 @@ class RideOptions extends StatelessWidget {
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(2))),
                 // color: appColors.appWhite,
-                child: Container(
+                child: SizedBox(
                   width: MediaQuery.of(context).size.width - 64,
                   child: Column(
                     children: [
@@ -84,12 +84,12 @@ class RideOptions extends StatelessWidget {
                   child: TextButton(
                     style: ButtonStyle(
                         backgroundColor:
-                            MaterialStateProperty.all(appColors.appWhite)),
+                            WidgetStateProperty.all(appColors.appWhite)),
                     onPressed: () {},
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Row(
-                        children: const [
+                        children: [
                           Icon(
                             FontAwesomeIcons.clock,
                             color: appColors.green,
@@ -124,7 +124,7 @@ class RideOptions extends StatelessWidget {
                     child: TextButton(
                       style: ButtonStyle(
                           backgroundColor:
-                              MaterialStateProperty.all(appColors.appWhite)),
+                              WidgetStateProperty.all(appColors.appWhite)),
                       onPressed: () {
                         goPressed();
                       },
@@ -144,21 +144,21 @@ class RideOptions extends StatelessWidget {
           const SizedBox(
             height: 4,
           ),
-          Material(
+          const Material(
             elevation: 1,
             color: appColors.appWhite,
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Fare:",
+                  Text("Fare:",
                       style: TextStyle(
                           color: appColors.green,
                           fontWeight: FontWeight.bold,
                           fontSize: 18)),
                   Row(
-                    children: const [
+                    children: [
                       Text("GHC",
                           style: TextStyle(
                               color: appColors.textBlack,

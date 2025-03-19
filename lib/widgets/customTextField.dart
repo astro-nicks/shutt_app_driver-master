@@ -38,7 +38,7 @@ class CustomTextField extends StatelessWidget {
           fillColor: appColors.offWhite,
           filled: true,
           hintText: hintText,
-          hintStyle: TextStyle(color: appColors.textGrey)),
+          hintStyle: const TextStyle(color: appColors.textGrey)),
     );
   }
 }
